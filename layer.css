@@ -1,0 +1,33 @@
+.layer_card{
+    position: absolute;
+    z-index: 0;
+    left: 2%;
+    top: 5%;
+    transform: scale(0.75);
+}
+.layer_ctrl{
+    display: flex;
+
+    position: absolute;
+    padding: 1% 1%;
+    right: -20%;
+    bottom: 1%;
+
+    width: 500px;
+    border-radius: 10px;
+    background-color: wheat;
+    z-index: 1;
+
+    transition: 0.5s;
+}
+.layer_ctrl:hover{
+    right:0.5%;
+}
+
+.layer_msg{
+    position: absolute;
+    z-index: 0;
+    left: 2%;
+    top: 5%;
+    transform: scale(0.75);
+}

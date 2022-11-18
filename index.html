@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlackJack</title>
+    <link rel="stylesheet" type="text/css" href="card.css"/>
+    <link rel="stylesheet" type="text/css" href="ctrl.css"/>
+    <link rel="stylesheet" type="text/css" href="layer.css"/>
+    <script src="card.js"></script>
+    <script src="DOM_ctrl.js"></script>
+    <script src="globalVar.js"></script>
+    <script src="eventHandler2.js"></script>
+
+    <link rel="preload" href="./card_img/Clubs.png" as="image"/>
+    <link rel="preload" href="./card_img/Clubs_J.png" as="image"/>
+    <link rel="preload" href="./card_img/Clubs_Q.png" as="image"/>
+    <link rel="preload" href="./card_img/Clubs_K.png" as="image"/>
+
+    <link rel="preload" href="./card_img/Spades.png" as="image"/>
+    <link rel="preload" href="./card_img/Spades_J.png" as="image"/>
+    <link rel="preload" href="./card_img/Spades_Q.png" as="image"/>
+    <link rel="preload" href="./card_img/Spades_K.png" as="image"/>
+
+    <link rel="preload" href="./card_img/Diamonds.png" as="image"/>
+    <link rel="preload" href="./card_img/Diamonds_J.png" as="image"/>
+    <link rel="preload" href="./card_img/Diamonds_Q.png" as="image"/>
+    <link rel="preload" href="./card_img/Diamonds_K.png" as="image"/>
+
+    <link rel="preload" href="./card_img/Hearts.png" as="image"/>
+    <link rel="preload" href="./card_img/Hearts_J.png" as="image"/>
+    <link rel="preload" href="./card_img/Hearts_Q.png" as="image"/>
+    <link rel="preload" href="./card_img/Hearts_K.png" as="image"/>
+    
+    <link rel="preload" href="./card_img/table_1.jpg" as="image"/>
+</head>
+<body>
+    <div class="layer_card" id="L_card">
+    </div>
+
+    <div class="layer_ctrl" id="L_ctrl">
+        <div class="btn_group">
+            <div class="baseBtn" id="btn_hit"><span>HIT</span></div>
+            <div class="baseBtn" id="btn_stand"><span>STAND</span></div>
+            <div class="baseBtn" id="btn_double"><span>DOUBLE</span></div>
+            <div class="baseBtn" id="btn_split"><span>SPLIT</span></div>
+            <div class="baseBtn" id="btn_surrender"><span>SURRENDER</span></div>
+            <div class="baseBtn" id="btn_cheat" style="background-color: rgb(250, 75, 75);"><span>CHEAT ON</span></div>
+        </div>
+        <div class="player_info">
+            <div class="chip_info"><span style="font-weight: 800;">Chips:&nbsp;</span><span id="AllChips">asdfasdf</span></div>
+            <div class="chip_input">
+                <input type="number" id="input_chips" value="10" step="10" min="0">
+                <div class="baseBtn" id="btn_bet"><span>BET</span></div>
+            </div>
+            <div class="game_msg">
+                <span id="game_msg_text"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="layer_msg">
+        <div class="cardFrame" id="arrow" style="filter:opacity(0%)">
+            <img src="./card_img/arrow_down.png" width="40%"/>
+        </div>
+    </div>
+</body>
+</html>
